@@ -28,6 +28,7 @@ public class Autor {
     @NotNull
     private LocalDateTime momentoCriacao = LocalDateTime.now();
 
+    @Deprecated
     public Autor() {
     }
 
