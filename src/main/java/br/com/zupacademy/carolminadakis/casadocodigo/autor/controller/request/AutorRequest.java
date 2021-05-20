@@ -1,4 +1,4 @@
-package br.com.zupacademy.carolminadakis.casadocodigo.autor.controller.form;
+package br.com.zupacademy.carolminadakis.casadocodigo.autor.controller.request;
 
 import br.com.zupacademy.carolminadakis.casadocodigo.autor.modelo.Autor;
 
@@ -6,7 +6,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-public class AutorForm {
+public class AutorRequest {
 
     @NotBlank
     private String nome;
@@ -30,8 +30,8 @@ public class AutorForm {
     }
 
 
-    public Autor converter(AutorForm autorForm) {
-        return new Autor(nome, email, descricao);
+    public Autor converter() {
+        return new Autor(this.nome, this.email, this.descricao);
     }
 
 
