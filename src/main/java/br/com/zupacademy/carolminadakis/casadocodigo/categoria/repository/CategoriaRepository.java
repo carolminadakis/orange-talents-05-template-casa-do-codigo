@@ -1,4 +1,4 @@
-package br.com.zupacademy.carolminadakis.casadocodigo.categoria;
+package br.com.zupacademy.carolminadakis.casadocodigo.categoria.repository;
 
 import br.com.zupacademy.carolminadakis.casadocodigo.categoria.modelo.Categoria;
 import org.springframework.data.jpa.repository.JpaRepository;

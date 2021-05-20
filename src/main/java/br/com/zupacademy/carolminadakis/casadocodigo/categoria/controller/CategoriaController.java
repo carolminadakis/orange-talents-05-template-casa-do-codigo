@@ -1,6 +1,6 @@
 package br.com.zupacademy.carolminadakis.casadocodigo.categoria.controller;
 
-import br.com.zupacademy.carolminadakis.casadocodigo.categoria.CategoriaRepository;
+import br.com.zupacademy.carolminadakis.casadocodigo.categoria.repository.CategoriaRepository;
 import br.com.zupacademy.carolminadakis.casadocodigo.categoria.controller.request.CategoriaRequest;
 import br.com.zupacademy.carolminadakis.casadocodigo.categoria.modelo.Categoria;
 import org.springframework.beans.factory.annotation.Autowired;
