@@ -1,6 +1,5 @@
 package br.com.zupacademy.carolminadakis.casadocodigo.categoria.controller;
 
-<<<<<<< HEAD
 import br.com.zupacademy.carolminadakis.casadocodigo.categoria.CategoriaRepository;
 import br.com.zupacademy.carolminadakis.casadocodigo.categoria.controller.request.CategoriaRequest;
 import br.com.zupacademy.carolminadakis.casadocodigo.categoria.modelo.Categoria;
@@ -29,7 +28,5 @@ public class CategoriaController {
 
         return ResponseEntity.ok().build();
     }
-=======
-public class CategoriaController {
->>>>>>> f9bee3a98bd4d72e11b41d87ac049132d00e5acb
+
 }
