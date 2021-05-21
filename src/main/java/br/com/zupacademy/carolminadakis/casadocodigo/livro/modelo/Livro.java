@@ -1,4 +1,4 @@
-package br.com.zupacademy.carolminadakis.casadocodigo.livro;
+package br.com.zupacademy.carolminadakis.casadocodigo.livro.modelo;
 
 import br.com.zupacademy.carolminadakis.casadocodigo.autor.modelo.Autor;
 import br.com.zupacademy.carolminadakis.casadocodigo.categoria.modelo.Categoria;

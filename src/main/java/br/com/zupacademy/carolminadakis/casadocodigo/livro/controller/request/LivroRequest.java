@@ -1,12 +1,13 @@
 package br.com.zupacademy.carolminadakis.casadocodigo.livro.controller.request;
 
 import br.com.zupacademy.carolminadakis.casadocodigo.autor.modelo.Autor;
+import br.com.zupacademy.carolminadakis.casadocodigo.autor.repository.AutorRepository;
 import br.com.zupacademy.carolminadakis.casadocodigo.categoria.modelo.Categoria;
-import br.com.zupacademy.carolminadakis.casadocodigo.livro.Livro;
+import br.com.zupacademy.carolminadakis.casadocodigo.categoria.repository.CategoriaRepository;
+import br.com.zupacademy.carolminadakis.casadocodigo.livro.modelo.Livro;
 import br.com.zupacademy.carolminadakis.casadocodigo.validarErros.UniqueValue;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import javax.persistence.EntityManager;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.*;
 import java.math.BigDecimal;
@@ -63,9 +64,10 @@ public class LivroRequest {
         this.dataPublicacao = dataPublicacao;
     }
 
-    public Livro converte(EntityManager manager) {
-        Autor autor = manager.find(Autor.class, autorId);
-        Categoria categoria =manager.find(Categoria.class, categoriaId);
+    public Livro converte(AutorRepository autorRepository, CategoriaRepository categoriaRepository) {
+        Autor autor = autorRepository.getOne(autorId);
+        Categoria categoria = categoriaRepository.getOne(categoriaId);
+
         return new Livro(titulo, resumo, sumario, preco, quantidadePaginas,
                 isbn, dataPublicacao, autor, categoria);
     }

@@ -1,4 +1,4 @@
-package br.com.zupacademy.carolminadakis.casadocodigo.autor.validacao;
+package br.com.zupacademy.carolminadakis.casadocodigo.autor.validacaoEmail;
 
 import br.com.zupacademy.carolminadakis.casadocodigo.autor.controller.request.AutorRequest;
 
