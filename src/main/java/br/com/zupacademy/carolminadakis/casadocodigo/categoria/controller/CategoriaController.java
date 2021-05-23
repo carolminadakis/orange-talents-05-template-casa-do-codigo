@@ -2,7 +2,7 @@ package br.com.zupacademy.carolminadakis.casadocodigo.categoria.controller;
 
 import br.com.zupacademy.carolminadakis.casadocodigo.categoria.repository.CategoriaRepository;
 import br.com.zupacademy.carolminadakis.casadocodigo.categoria.controller.request.CategoriaRequest;
-import br.com.zupacademy.carolminadakis.casadocodigo.categoria.modelo.Categoria;
+import br.com.zupacademy.carolminadakis.casadocodigo.categoria.model.Categoria;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

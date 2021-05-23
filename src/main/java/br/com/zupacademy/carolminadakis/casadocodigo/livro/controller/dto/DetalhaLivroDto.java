@@ -1,7 +1,7 @@
 package br.com.zupacademy.carolminadakis.casadocodigo.livro.controller.dto;
 
 import br.com.zupacademy.carolminadakis.casadocodigo.autor.controller.dto.DetalhaAutorDto;
-import br.com.zupacademy.carolminadakis.casadocodigo.livro.modelo.Livro;
+import br.com.zupacademy.carolminadakis.casadocodigo.livro.model.Livro;
 
 import java.math.BigDecimal;
 import java.time.format.DateTimeFormatter;

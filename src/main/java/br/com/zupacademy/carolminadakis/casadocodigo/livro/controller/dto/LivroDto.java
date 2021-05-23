@@ -1,6 +1,6 @@
 package br.com.zupacademy.carolminadakis.casadocodigo.livro.controller.dto;
 
-import br.com.zupacademy.carolminadakis.casadocodigo.livro.modelo.Livro;
+import br.com.zupacademy.carolminadakis.casadocodigo.livro.model.Livro;
 
 import java.util.List;
 import java.util.stream.Collectors;

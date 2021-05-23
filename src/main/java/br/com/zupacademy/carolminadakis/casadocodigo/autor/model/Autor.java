@@ -1,4 +1,4 @@
-package br.com.zupacademy.carolminadakis.casadocodigo.autor.modelo;
+package br.com.zupacademy.carolminadakis.casadocodigo.autor.model;
 
 import org.springframework.util.Assert;
 

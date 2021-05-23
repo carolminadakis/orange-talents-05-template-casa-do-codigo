@@ -1,4 +1,4 @@
-package br.com.zupacademy.carolminadakis.casadocodigo.categoria.modelo;
+package br.com.zupacademy.carolminadakis.casadocodigo.categoria.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

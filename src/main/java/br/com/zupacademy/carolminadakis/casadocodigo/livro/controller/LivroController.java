@@ -5,7 +5,7 @@ import br.com.zupacademy.carolminadakis.casadocodigo.categoria.repository.Catego
 import br.com.zupacademy.carolminadakis.casadocodigo.livro.controller.dto.DetalhaLivroDto;
 import br.com.zupacademy.carolminadakis.casadocodigo.livro.controller.dto.LivroDto;
 import br.com.zupacademy.carolminadakis.casadocodigo.livro.repository.LivroRepository;
-import br.com.zupacademy.carolminadakis.casadocodigo.livro.modelo.Livro;
+import br.com.zupacademy.carolminadakis.casadocodigo.livro.model.Livro;
 import br.com.zupacademy.carolminadakis.casadocodigo.livro.controller.request.LivroRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

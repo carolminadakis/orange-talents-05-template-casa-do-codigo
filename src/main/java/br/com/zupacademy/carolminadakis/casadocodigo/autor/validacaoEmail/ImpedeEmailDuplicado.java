@@ -2,7 +2,7 @@ package br.com.zupacademy.carolminadakis.casadocodigo.autor.validacaoEmail;
 
 import br.com.zupacademy.carolminadakis.casadocodigo.autor.controller.request.AutorRequest;
 
-import br.com.zupacademy.carolminadakis.casadocodigo.autor.modelo.Autor;
+import br.com.zupacademy.carolminadakis.casadocodigo.autor.model.Autor;
 import br.com.zupacademy.carolminadakis.casadocodigo.autor.repository.AutorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
