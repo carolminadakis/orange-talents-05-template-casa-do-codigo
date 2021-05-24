@@ -5,7 +5,7 @@ import br.com.zupacademy.carolminadakis.casadocodigo.autor.repository.AutorRepos
 import br.com.zupacademy.carolminadakis.casadocodigo.categoria.model.Categoria;
 import br.com.zupacademy.carolminadakis.casadocodigo.categoria.repository.CategoriaRepository;
 import br.com.zupacademy.carolminadakis.casadocodigo.livro.model.Livro;
-import br.com.zupacademy.carolminadakis.casadocodigo.validarErros.UniqueValue;
+import br.com.zupacademy.carolminadakis.casadocodigo.validacoes.UniqueValue;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.ManyToOne;

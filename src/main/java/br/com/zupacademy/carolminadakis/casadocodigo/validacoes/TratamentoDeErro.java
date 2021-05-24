@@ -1,4 +1,4 @@
-package br.com.zupacademy.carolminadakis.casadocodigo.validarErros;
+package br.com.zupacademy.carolminadakis.casadocodigo.validacoes;
 
 public class TratamentoDeErro {
 

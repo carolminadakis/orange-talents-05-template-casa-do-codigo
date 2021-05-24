@@ -11,6 +11,7 @@ public class Estado {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String nome;
 
     @ManyToOne
@@ -21,7 +22,19 @@ public class Estado {
         this.pais = pais;
     }
 
-    @Deprecated
     public Estado() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    @Override
+    public String toString() {
+        return "Estado{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", pais=" + pais +
+                '}';
     }
 }

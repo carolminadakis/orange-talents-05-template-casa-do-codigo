@@ -1,4 +1,4 @@
-package br.com.zupacademy.carolminadakis.casadocodigo.validarErros;
+package br.com.zupacademy.carolminadakis.casadocodigo.validacoes;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;

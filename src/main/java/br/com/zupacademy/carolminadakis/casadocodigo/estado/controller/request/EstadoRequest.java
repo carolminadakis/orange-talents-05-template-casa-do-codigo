@@ -4,7 +4,7 @@ import br.com.zupacademy.carolminadakis.casadocodigo.estado.model.Estado;
 import br.com.zupacademy.carolminadakis.casadocodigo.estado.repository.EstadoRepository;
 import br.com.zupacademy.carolminadakis.casadocodigo.pais.model.Pais;
 import br.com.zupacademy.carolminadakis.casadocodigo.pais.repository.PaisRepository;
-import br.com.zupacademy.carolminadakis.casadocodigo.validarErros.ExistsId;
+import br.com.zupacademy.carolminadakis.casadocodigo.validacoes.ExistsId;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -16,24 +16,25 @@ public class EstadoRequest {
 
     @NotNull
     @ExistsId(domainClass = Pais.class, fieldName = "id", message = "Identificador de país não informado")
-    private Long paisId;
+    private Long idPais;
 
 
-    public EstadoRequest(String nome, Long paisId) {
+    public EstadoRequest(String nome, Long idPais) {
         this.nome = nome;
-        this.paisId = paisId;
+        this.idPais = idPais;
     }
 
     public String getNome() {
         return nome;
     }
 
-    public Long getPaisId() {
-        return paisId;
+    public Long getIdPais() {
+        return idPais;
     }
 
+
     public Estado converter(PaisRepository paisRepository, EstadoRepository estadoRepository){
-        Pais pais = paisRepository.getOne(paisId);  //busca o país no banco de dados, pelo id informado
+        Pais pais = paisRepository.getOne(idPais);  //busca o país no banco de dados, pelo id informado
         if(pais != null) {
             return new Estado(nome, pais);  //retorna o estado e o país
         }

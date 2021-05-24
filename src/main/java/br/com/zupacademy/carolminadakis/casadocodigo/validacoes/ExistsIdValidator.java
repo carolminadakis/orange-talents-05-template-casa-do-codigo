@@ -1,4 +1,4 @@
-package br.com.zupacademy.carolminadakis.casadocodigo.validarErros;
+package br.com.zupacademy.carolminadakis.casadocodigo.validacoes;
 
 import org.springframework.util.Assert;
 
@@ -26,8 +26,8 @@ public class ExistsIdValidator implements ConstraintValidator<ExistsId, Object> 
 
     @Override
     public boolean isValid(Object valor, ConstraintValidatorContext contexto) {
-        Query q = em.createQuery("select 1 from "+aClass.getName()+" where "+domainAttribute+"=:value");
-        System.out.println("QEURY:"+ q);
+        Query q = em.createQuery("SELECT 1 FROM "+aClass.getName()+" WHERE "+domainAttribute+"=:value");
+        System.out.println("QUERY:"+ q);
         q.setParameter("value", valor);
 
         List<?> list = q.getResultList();

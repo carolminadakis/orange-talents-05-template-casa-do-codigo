@@ -1,7 +1,7 @@
 package br.com.zupacademy.carolminadakis.casadocodigo.categoria.controller.request;
 
 import br.com.zupacademy.carolminadakis.casadocodigo.categoria.model.Categoria;
-import br.com.zupacademy.carolminadakis.casadocodigo.validarErros.UniqueValue;
+import br.com.zupacademy.carolminadakis.casadocodigo.validacoes.UniqueValue;
 
 import javax.validation.constraints.NotBlank;
 
