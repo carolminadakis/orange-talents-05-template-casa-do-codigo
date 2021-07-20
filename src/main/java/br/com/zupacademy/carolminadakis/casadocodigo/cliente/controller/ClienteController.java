@@ -7,7 +7,6 @@ import br.com.zupacademy.carolminadakis.casadocodigo.estado.repository.EstadoRep
 import br.com.zupacademy.carolminadakis.casadocodigo.pais.repository.PaisRepository;
 import br.com.zupacademy.carolminadakis.casadocodigo.validacoes.ValidaRestricaoEstadoPertencePais;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 

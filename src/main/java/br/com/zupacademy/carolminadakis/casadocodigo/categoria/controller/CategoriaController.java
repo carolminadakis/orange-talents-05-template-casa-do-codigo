@@ -22,7 +22,7 @@ public class CategoriaController {
 
     @PostMapping
     @Transactional
-    public ResponseEntity cria(@RequestBody @Valid CategoriaRequest categoriaRequest) {
+    public ResponseEntity<?> cria(@RequestBody @Valid CategoriaRequest categoriaRequest) {
         Categoria categoria = categoriaRequest.converter();
         categoriaRepository.save(categoria);
 

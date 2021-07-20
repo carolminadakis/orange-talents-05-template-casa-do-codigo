@@ -24,23 +24,23 @@ public class ValidaRestricaoEstadoPertencePais implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-        if(errors.hasErrors()) {
+        if (errors.hasErrors()) {
             return;
         }
 
         ClienteRequest clienteRequest = (ClienteRequest) target;
         List<Estado> estados = estadoRepository.findByPaisId(clienteRequest.getPaisId());
-        if(estados.size()>= 1 && clienteRequest.getEstadoId()== null) {
+        if (estados.size() >= 1 && clienteRequest.getEstadoId() == null) {
             errors.rejectValue("estadoId", null, "Este país possui estados, selecione um");
 
         }
-        if(clienteRequest.getEstadoId() != null && estadoNaoPertence(estados, clienteRequest)) {
+        if (clienteRequest.getEstadoId() != null && estadoNaoPertence(estados, clienteRequest)) {
             errors.rejectValue("estadoId", null, "Este Estado não pertence a este Pais");
-
 
         }
 
     }
+
     private boolean estadoNaoPertence(List<Estado> estados, ClienteRequest clienteRequest) {
 
         for (Estado estado : estados) {
